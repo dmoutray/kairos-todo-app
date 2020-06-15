@@ -3,8 +3,7 @@ import React from 'react';
 import {
     HashRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from 'react-router-dom'
 import './App.css';
 import Home from "./views/home";
@@ -15,17 +14,14 @@ function App() {
         <div className="App">
 
             <Router>
-                {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
                 <Switch>
-                    <Route path="/todo">
-                        <Home/>
+                    <Route exact path="/" component={Login}>
                     </Route>
-                    <Route path="/login">
-                        <Login/>
+                    <Route path="/login" component={Login}>
+                    </Route>
+                    <Route path="/todo" component={Home}>
                     </Route>
                 </Switch>
-
             </Router>
 
         </div>
