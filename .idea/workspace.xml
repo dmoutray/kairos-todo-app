@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dfd8a02-a228-450e-b015-fe09771002e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video-demo.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,17 +51,17 @@
     <property name="ts.external.directory.path" value="C:\Users\m00ts\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\201.7846.79\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\public" />
-      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\images" />
-      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app" />
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\todo-app" />
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\notifications" />
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\modals" />
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\login" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\public" />
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\images" />
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\css" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -96,7 +95,7 @@
       <workItem from="1592072854136" duration="7290000" />
       <workItem from="1592111756879" duration="18322000" />
       <workItem from="1592212073118" duration="41593000" />
-      <workItem from="1592254432430" duration="290000" />
+      <workItem from="1592254432430" duration="987000" />
     </task>
     <task id="LOCAL-00001" summary="Add date picker and date sort function.">
       <created>1592040520129</created>
