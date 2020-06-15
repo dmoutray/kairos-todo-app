@@ -14,11 +14,14 @@ h1,h2,h3,h4 {
 
 table tr {
   border: 1px solid lightgrey;
+  height: 50px;
 }
 
-td:last-child {
-  position: absolute;
-  right: 38px;
+td:last-child>div {
+  position: relative;
+  float: right;
+  top: -5px;
+  right: -10px;
 }
 
 .header {
@@ -83,6 +86,7 @@ td:last-child {
   font-size: 1rem;
   padding: 10px;
   margin-right: 5px;
+  cursor: default;
 }
 
 .image-button img {
@@ -90,6 +94,7 @@ td:last-child {
   top: 7px;
   width: 30px;
   margin-left: 5px;
+  pointer-events: none;
 }
 
 .image-button:hover {
@@ -103,25 +108,22 @@ td:last-child {
 }
 
 .todo-list {
-  border-spacing: 50px 20px;
   border-collapse: collapse;
+  width: 100%;
 }
-
 
 td {
   padding: 0 10px;
-  min-width: 100px;
 }
 
-tbody tr:nth-child(odd) {
-  background: #eee;
+table tr:nth-child(odd) {
+  background: lightgrey;
 }
 
 tr>td>img {
   position: relative;
   top: 3px;
-  right: 30%;
-  width: 40px;
+  width: 32px;
   transition: all .2s ease-in-out;
 }
 
@@ -141,7 +143,12 @@ input:active {
 
 input[type='text'] {
   border-radius: 2px;
-  width:50%;
+  width:75%;
+}
+
+input[type='date'] {
+  border-radius: 2px;
+  width:25%;
 }
 
 button {
@@ -209,6 +216,7 @@ button.primary:active {
 
 .modal {
   position: absolute;
+  top:0px;
   width: 100vw;
   height: 100vh;
   z-index: 2;
@@ -217,15 +225,13 @@ button.primary:active {
 
 .modal-body {
   display: block;
-  width: 60%;
+  position: relative;
+  top: 25vh;
+  width: 50vw;
   margin: 0 auto;
-  background-color: white;
   text-align: center;
   padding: 10px;
   border-radius: 4px;
   box-shadow: 0 0 5px #E96C22;
+  background-color: #f2f2f2;
 }
-
-/*
-background color #19232d
- */

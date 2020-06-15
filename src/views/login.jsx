@@ -21,7 +21,7 @@ export default class Login extends React.Component {
         })
     }
 
-    validate = () => {
+    validateLoginForm = () => {
         if (this.state.userName) {
             sessionStorage.setItem('userName', this.state.userName)
             this.props.history.push('/todo')
@@ -46,7 +46,7 @@ export default class Login extends React.Component {
                 <Notification error={this.state.error}/>
                 <div className={'login'}>
                     <input type={'text'} onChange={this.handleChange} placeholder={'Enter a username...'}/>
-                    <button className={'button primary'} onClick={this.validate}>Login</button>
+                    <button className={'button primary'} onClick={this.validateLoginForm}>Login</button>
                 </div>
             </div>
         )

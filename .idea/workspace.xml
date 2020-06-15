@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dfd8a02-a228-450e-b015-fe09771002e9" name="Default Changelist" comment="Add routes">
-      <change afterPath="$PROJECT_DIR$/public/edit-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/notification.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-form.jsx" afterDir="false" />
+    <list default="true" id="6dfd8a02-a228-450e-b015-fe09771002e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/change-handlers/handle-changes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/edit-buttons.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/todo-items.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-list.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/cross-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/delete-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/edit-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/tick-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validation/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/todo-app.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,7 +100,7 @@
       <workItem from="1592034102642" duration="28068000" />
       <workItem from="1592072854136" duration="7290000" />
       <workItem from="1592111756879" duration="18322000" />
-      <workItem from="1592212073118" duration="21941000" />
+      <workItem from="1592212073118" duration="36514000" />
     </task>
     <task id="LOCAL-00001" summary="Add date picker and date sort function.">
       <created>1592040520129</created>
@@ -143,7 +144,63 @@
       <option name="project" value="LOCAL" />
       <updated>1592234170291</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add routes">
+      <created>1592234202917</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592234202917</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add icons">
+      <created>1592234211814</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592234211814</updated>
+    </task>
+    <task id="LOCAL-00009" summary="delete default react images">
+      <created>1592234223122</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592234223122</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add login component">
+      <created>1592234239738</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592234239738</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add tick icon">
+      <created>1592234277905</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1592234277905</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add todo components">
+      <created>1592234292215</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592234292215</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add notification system">
+      <created>1592234301114</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592234301114</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update workspace">
+      <created>1592234431223</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1592234431223</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,11 +210,18 @@
     <MESSAGE value="Add date picker and date sort function." />
     <MESSAGE value="Add some boilerplate code." />
     <MESSAGE value="Update CSS" />
-    <MESSAGE value="Add routes" />
     <MESSAGE value="Add header" />
     <MESSAGE value="Add the home page" />
     <MESSAGE value="Update the index file with favicons and title" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the index file with favicons and title" />
+    <MESSAGE value="Add routes" />
+    <MESSAGE value="Add icons" />
+    <MESSAGE value="delete default react images" />
+    <MESSAGE value="Add login component" />
+    <MESSAGE value="add tick icon" />
+    <MESSAGE value="Add todo components" />
+    <MESSAGE value="Add notification system" />
+    <MESSAGE value="update workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace" />
   </component>
   <component name="WindowStateProjectService">
     <state x="852" y="399" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592048594550">
@@ -172,10 +236,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="1377" y="348" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1592225936440" />
-    <state x="721" y="166" key="CommitChangelistDialog2" timestamp="1592234169683">
+    <state x="721" y="166" key="CommitChangelistDialog2" timestamp="1592234430774">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="721" y="166" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1592234169683" />
+    <state x="721" y="166" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1592234430774" />
     <state x="876" y="352" key="FileChooserDialogImpl" timestamp="1592215961359">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -196,6 +260,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state width="1074" height="332" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1592231783967" />
+    <state x="876" y="300" key="RollbackChangesDialog" timestamp="1592234267518">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="876" y="300" key="RollbackChangesDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1592234267518" />
     <state x="606" y="242" key="SettingsEditor" timestamp="1592215975636">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -204,17 +272,21 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.2194.1194@0.0.2194.1194" timestamp="1592225308297" />
-    <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592234081911">
+    <state x="690" y="330" key="Vcs.Push.Dialog.v2" timestamp="1592234832173">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="809" y="196" width="576" height="801" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592234081911" />
+    <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1592234832173" />
+    <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592242567384">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="809" y="196" width="576" height="801" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592242567384" />
     <state x="754" y="279" key="run.anything.popup" timestamp="1592047228665">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="754" y="279" key="run.anything.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592047228665" />
-    <state x="759" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1592234078788">
+    <state x="759" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1592235972940">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="759" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592234078788" />
+    <state x="759" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592235972940" />
   </component>
 </project>

@@ -6,7 +6,7 @@ import {
     Route
 } from 'react-router-dom'
 import './App.css';
-import Home from "./views/home";
+import TodoApp from "./views/todo-app";
 import Login from "./views/login";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
                     </Route>
                     <Route path="/login" component={Login}>
                     </Route>
-                    <Route path="/todo" component={Home}>
+                    <Route path="/todo" component={TodoApp}>
                     </Route>
                 </Switch>
             </Router>
