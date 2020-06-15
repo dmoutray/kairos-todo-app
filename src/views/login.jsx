@@ -1,8 +1,12 @@
 import React from "react";
 
-import Notification from "../components/notification";
+import Notification from "../components/notifications/notification";
 
 export default class Login extends React.Component {
+
+    /**
+     * Component for the Login page
+     */
 
     constructor(props) {
         super(props);

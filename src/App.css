@@ -17,6 +17,12 @@ table tr {
   height: 50px;
 }
 
+td:first-child>div {
+  width: 40vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 td:last-child>div {
   position: relative;
   float: right;

@@ -1,7 +1,7 @@
 import React from "react";
 
-import editIcon from "../images/edit-icon.png";
-import deleteIcon from "../images/delete-icon.png";
+import editIcon from "../../images/edit-icon.png";
+import deleteIcon from "../../images/delete-icon.png";
 
 export function EditButtons(props) {
 

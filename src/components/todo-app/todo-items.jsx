@@ -1,5 +1,5 @@
-import check from "../images/tick-icon.png";
-import cross from "../images/cross-icon.png";
+import check from "../../images/tick-icon.png";
+import cross from "../../images/cross-icon.png";
 import React from "react";
 
 import {EditButtons} from "./edit-buttons";
@@ -22,7 +22,7 @@ export default function TodoItems(props) {
                                         }}>{row[item] ? <img src={check} alt='done'/> :
                                             <img src={cross} alt='not done'/>}</td>
                                     } else {
-                                        return (<td data-key={rowKey} key={key}>{row[item]}</td>)
+                                        return (<td data-key={rowKey} key={key}><div>{row[item]}</div></td>)
                                     }
                                 })}
                                     {todoItems.length > 0 && <EditButtons rowKey={rowKey}

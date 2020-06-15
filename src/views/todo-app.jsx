@@ -1,10 +1,10 @@
 import React from "react";
 
 import Header from "../components/header";
-import Modal from "../components/modal"
-import Notification from "../components/notification";
-import TodoItems from "../components/todo-items";
-import TodoForm from "../components/todo-form";
+import Modal from "../components/modals/modal"
+import Notification from "../components/notifications/notification";
+import TodoItems from "../components/todo-app/todo-items";
+import TodoForm from "../components/todo-app/todo-form";
 
 import {EDIT_DEFAULT} from "../constants/state-defaults";
 import {
@@ -27,7 +27,15 @@ export default class TodoApp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            userName: sessionStorage.getItem('userName') || 'User',
+            userName: function(){
+                let userName = sessionStorage.getItem('userName')
+                if (userName){
+                    return userName
+                } else {
+                    props.history.push('/login')
+                }
+
+            }(),
             dateValue: '',
             message: '',
             edit: EDIT_DEFAULT,

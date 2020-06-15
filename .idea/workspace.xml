@@ -65,9 +65,11 @@
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\todo-app" />
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\notifications" />
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\modals" />
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\login" />
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\images" />
-      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\public" />
-      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -100,7 +102,7 @@
       <workItem from="1592034102642" duration="28068000" />
       <workItem from="1592072854136" duration="7290000" />
       <workItem from="1592111756879" duration="18322000" />
-      <workItem from="1592212073118" duration="36514000" />
+      <workItem from="1592212073118" duration="41070000" />
     </task>
     <task id="LOCAL-00001" summary="Add date picker and date sort function.">
       <created>1592040520129</created>
@@ -244,22 +246,22 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="876" y="352" key="FileChooserDialogImpl/0.0.2194.1194@0.0.2194.1194" timestamp="1592215961359" />
-    <state width="1074" height="332" key="GridCell.Tab.0.bottom" timestamp="1592231783967">
+    <state width="1049" height="332" key="GridCell.Tab.0.bottom" timestamp="1592253379846">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="1074" height="332" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1592231783967" />
-    <state width="1074" height="332" key="GridCell.Tab.0.center" timestamp="1592231783967">
+    <state width="1049" height="332" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1592253379846" />
+    <state width="1049" height="332" key="GridCell.Tab.0.center" timestamp="1592253379846">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="1074" height="332" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1592231783967" />
-    <state width="1074" height="332" key="GridCell.Tab.0.left" timestamp="1592231783967">
+    <state width="1049" height="332" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1592253379846" />
+    <state width="1049" height="332" key="GridCell.Tab.0.left" timestamp="1592253379846">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="1074" height="332" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1592231783967" />
-    <state width="1074" height="332" key="GridCell.Tab.0.right" timestamp="1592231783967">
+    <state width="1049" height="332" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1592253379846" />
+    <state width="1049" height="332" key="GridCell.Tab.0.right" timestamp="1592253379846">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="1074" height="332" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1592231783967" />
+    <state width="1049" height="332" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1592253379846" />
     <state x="876" y="300" key="RollbackChangesDialog" timestamp="1592234267518">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -276,17 +278,17 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1592234832173" />
-    <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592242567384">
+    <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592250270764">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="809" y="196" width="576" height="801" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592242567384" />
+    <state x="809" y="196" width="576" height="801" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592250270764" />
     <state x="754" y="279" key="run.anything.popup" timestamp="1592047228665">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="754" y="279" key="run.anything.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592047228665" />
-    <state x="759" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1592235972940">
+    <state x="759" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1592252650864">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="759" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592235972940" />
+    <state x="759" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592252650864" />
   </component>
 </project>
