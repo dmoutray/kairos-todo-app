@@ -1,6 +1,10 @@
 import React from "react";
 
 export default function Notification(props) {
+    /**
+     * Controlled Component which provides a drop down notification slider
+     */
+
     return (
         <div className={'notification-container'}>
             <div className={'notification'} style={

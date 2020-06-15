@@ -5,6 +5,10 @@ import deleteIcon from "../../images/delete-icon.png";
 
 export function EditButtons(props) {
 
+    /**
+     * Controlled component which provides the edit and delete buttons
+     */
+
     const {rowKey, handleEditItem, handleDeleteItem} = props
 
     return (

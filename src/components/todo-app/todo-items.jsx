@@ -6,6 +6,10 @@ import {EditButtons} from "./edit-buttons";
 
 export default function TodoItems(props) {
 
+    /**
+     * Controlled component which provides the list of todo items
+     */
+
     const {todoItems, handleDeleteItem, handleEditItem, handleSetCompleted} = props
 
     if (todoItems.length) {

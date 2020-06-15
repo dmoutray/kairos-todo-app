@@ -4,6 +4,10 @@ import {useHistory} from "react-router-dom"
 
 export default function Header(props) {
 
+    /**
+     * Controlled component which provides a web page header
+     */
+
     const reactHistory = useHistory()
 
     return (

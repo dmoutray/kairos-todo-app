@@ -3,7 +3,7 @@ import React from "react";
 export default function Modal(props) {
 
     /**
-     * Component which appears as a top layer modal used for editing
+     * Component which appears as a top layer modal used for editing existing todo items
      */
 
     const {edit, handleEdit, handleResetEditState, handleUpdateItem } = props

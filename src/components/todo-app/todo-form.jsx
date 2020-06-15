@@ -2,6 +2,10 @@ import React from "react";
 
 export default function TodoForm(props) {
 
+    /**
+     * Controlled component which provides the add todo item form
+     */
+
     const {message, dateValue, handleAddItem, handleChange} = props
 
     return (

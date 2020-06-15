@@ -12,6 +12,25 @@ h1,h2,h3,h4 {
   font-style: italic;
 }
 
+td {
+  padding: 0 10px;
+}
+
+table tr:nth-child(odd) {
+  background: lightgrey;
+}
+
+tr>td>img {
+  position: relative;
+  top: 3px;
+  width: 32px;
+  transition: all .2s ease-in-out;
+}
+
+tr>td>img:hover {
+  transform: scale(1.2);
+}
+
 table tr {
   border: 1px solid lightgrey;
   height: 50px;
@@ -34,7 +53,6 @@ td:last-child>div {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  /* padding-right: 50px; */
   font-family: 'Barlow', sans-serif;
   font-size: 2rem;
   font-style: italic;
@@ -116,25 +134,6 @@ td:last-child>div {
 .todo-list {
   border-collapse: collapse;
   width: 100%;
-}
-
-td {
-  padding: 0 10px;
-}
-
-table tr:nth-child(odd) {
-  background: lightgrey;
-}
-
-tr>td>img {
-  position: relative;
-  top: 3px;
-  width: 32px;
-  transition: all .2s ease-in-out;
-}
-
-tr>td>img:hover {
-  transform: scale(1.2);
 }
 
 input {
@@ -222,7 +221,7 @@ button.primary:active {
 
 .modal {
   position: absolute;
-  top:0px;
+  top:0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
@@ -240,4 +239,16 @@ button.primary:active {
   border-radius: 4px;
   box-shadow: 0 0 5px #E96C22;
   background-color: #f2f2f2;
+}
+
+.not-found {
+  position: relative;
+  width: 50vw;
+  margin: 0 auto;
+  top: 25vh;
+  text-align: center;
+}
+
+.not-found span {
+  font-style: normal;
 }

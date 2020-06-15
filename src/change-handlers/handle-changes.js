@@ -39,7 +39,8 @@ export function handleAddItem () {
 
 export function handleChange(event) {
     /**
-     * Generic function to update the local state with a given event key:value pair
+     * Generic function to change the local state with a given event key:value pair
+     * Note this function could also replace handleUpdateItem but I ran out of time.
      */
 
     let {key} = event.target.dataset

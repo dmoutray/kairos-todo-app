@@ -22,7 +22,8 @@ import {
 export default class TodoApp extends React.Component {
 
     /**
-     * Main application*/
+     * Main Application
+     */
 
     constructor(props) {
         super(props);
