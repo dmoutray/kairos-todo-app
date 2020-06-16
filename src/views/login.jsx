@@ -46,11 +46,13 @@ export default class Login extends React.Component {
     render() {
         return (
             <div className={'login-container'}>
-                <div><h1>Todo App</h1></div>
                 <Notification error={this.state.error}/>
                 <div className={'login'}>
-                    <input type={'text'} onChange={this.handleChange} placeholder={'Enter a username...'}/>
-                    <button className={'button primary'} onClick={this.validateLoginForm}>Login</button>
+                    <h1>Todo App</h1>
+                    <div className='login-form'>
+                        <input type={'text'} onChange={this.handleChange} placeholder={'Enter a username...'}/>
+                        <button className={'button primary'} onClick={this.validateLoginForm}>Login</button>
+                    </div>
                 </div>
             </div>
         )

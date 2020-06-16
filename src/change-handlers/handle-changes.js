@@ -12,9 +12,9 @@ export function handleAddItem () {
 
             if (valid === 'true') {
                 let newTodo = {
-                    message: state.message,
-                    dateValue: state.dateValue,
                     completed: false,
+                    dateValue: state.dateValue,
+                    message: state.message
                 }
                 return {
                     todoItems: [...state.todoItems, newTodo],

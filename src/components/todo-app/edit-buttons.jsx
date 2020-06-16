@@ -13,19 +13,17 @@ export function EditButtons(props) {
 
     return (
         <td>
-            <div>
-                <div className={'image-button'}
-                     data-key={rowKey}
-                     onClick={handleEditItem}
-                > edit
-                    <img src={editIcon}/>
-                </div>
-                <div className={'image-button'}
-                     data-key={rowKey}
-                     onClick={handleDeleteItem}
-                > delete
-                    <img src={deleteIcon}/>
-                </div>
+            <div className={'image-button'}
+                 data-key={rowKey}
+                 onClick={handleEditItem}
+            > edit
+                <img src={editIcon}/>
+            </div>
+            <div className={'image-button'}
+                 data-key={rowKey}
+                 onClick={handleDeleteItem}
+            > delete
+                <img src={deleteIcon}/>
             </div>
         </td>
     )

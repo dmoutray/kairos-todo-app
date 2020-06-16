@@ -1,10 +1,10 @@
-
 body {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   background-color: #f2f2f2;
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 h1,h2,h3,h4 {
@@ -12,12 +12,24 @@ h1,h2,h3,h4 {
   font-style: italic;
 }
 
-td {
+
+table {
+  border-radius: 2px;
+}
+
+table tr {
+  background-color: white;
+  border: 1px solid #E96C22;
+  height: 50px;
+}
+
+table td, th {
+  text-align: center;
   padding: 0 10px;
 }
 
-table tr:nth-child(odd) {
-  background: lightgrey;
+table th {
+  font-family: 'Barlow', sans-serif;
 }
 
 tr>td>img {
@@ -31,32 +43,28 @@ tr>td>img:hover {
   transform: scale(1.2);
 }
 
-table tr {
-  border: 1px solid lightgrey;
-  height: 50px;
-}
-
-td:first-child>div {
-  width: 40vw;
+td:nth-child(3)>div {
+  text-align: left;
+  width: 20vw;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 td:last-child>div {
   position: relative;
-  float: right;
+  text-align: center;
   top: -5px;
-  right: -10px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
   font-family: 'Barlow', sans-serif;
   font-size: 2rem;
   font-style: italic;
-  padding: 0 50px;
+  padding: 50px;
+  background-color: peachpuff;
+  border-bottom: 2px solid white;
 }
 
 .header button {
@@ -74,20 +82,30 @@ td:last-child>div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 100vh;
 }
 
 .login {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  width: 40%;
+  width: 50%;
+  height: 40vh;
+  background-color: peachpuff;
+  box-shadow: 0 0 5px sandybrown;
+}
+
+.login-form {
+  width: 100%;
+  text-align: center;
 }
 
 .login input[type='text'] {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   width: 60%;
+  margin-top: 30px;
 }
 
 .login input[type='text']::placeholder {
@@ -132,8 +150,8 @@ td:last-child>div {
 }
 
 .todo-list {
-  border-collapse: collapse;
   width: 100%;
+  box-shadow: 0 0 5px slategray;
 }
 
 input {
@@ -213,6 +231,7 @@ button.primary:active {
   color: #19232d;
   line-height: 50px;
   padding: 0 10px;
+  font-family: 'Barlow', sans-serif;
   font-size: 1rem;
   border-top: 2px solid #E96C22;
   background-color: white;
@@ -222,7 +241,7 @@ button.primary:active {
 .modal {
   position: absolute;
   top:0;
-  width: 100vw;
+  width: 97vw;
   height: 100vh;
   z-index: 2;
   backdrop-filter: blur(0.1rem);

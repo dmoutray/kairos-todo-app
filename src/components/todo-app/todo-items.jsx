@@ -15,6 +15,15 @@ export default function TodoItems(props) {
     if (todoItems.length) {
         return (
             <table className='todo-list'>
+                <thead>
+                <tr>
+                    <th>completed?</th>
+                    <th>due date</th>
+                    <th>message</th>
+                    <th>actions</th>
+                </tr>
+                </thead>
+                <tbody>
                 {
                     todoItems.map((row, key) => {
                             let rowKey = key;
@@ -26,7 +35,9 @@ export default function TodoItems(props) {
                                         }}>{row[item] ? <img src={check} alt='done'/> :
                                             <img src={cross} alt='not done'/>}</td>
                                     } else {
-                                        return (<td data-key={rowKey} key={key}><div>{row[item]}</div></td>)
+                                        return (<td data-key={rowKey} key={key}>
+                                            <div>{row[item]}</div>
+                                        </td>)
                                     }
                                 })}
                                     {todoItems.length > 0 && <EditButtons rowKey={rowKey}
@@ -38,6 +49,7 @@ export default function TodoItems(props) {
                         }
                     )
                 }
+                </tbody>
             </table>
         )
     } else {
