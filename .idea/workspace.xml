@@ -4,6 +4,8 @@
     <list default="true" id="6dfd8a02-a228-450e-b015-fe09771002e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +103,8 @@
       <workItem from="1592265990883" duration="5991000" />
       <workItem from="1592272004150" duration="83000" />
       <workItem from="1592272115061" duration="537000" />
-      <workItem from="1592337717393" duration="2373000" />
+      <workItem from="1592337717393" duration="2568000" />
+      <workItem from="1592341731776" duration="1518000" />
     </task>
     <task id="LOCAL-00001" summary="Add date picker and date sort function.">
       <created>1592040520129</created>
@@ -236,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592272639008</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Update readme">
+      <created>1592340768558</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1592340768558</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,10 +286,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="1377" y="348" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1592225936440" />
-    <state x="721" y="166" key="CommitChangelistDialog2" timestamp="1592272638538">
+    <state x="721" y="166" key="CommitChangelistDialog2" timestamp="1592340768058">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="721" y="166" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1592272638538" />
+    <state x="721" y="166" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1592340768058" />
     <state x="876" y="352" key="FileChooserDialogImpl" timestamp="1592215961359">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -312,10 +322,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.2194.1194@0.0.2194.1194" timestamp="1592225308297" />
-    <state x="690" y="330" key="Vcs.Push.Dialog.v2" timestamp="1592272642773">
+    <state x="690" y="330" key="Vcs.Push.Dialog.v2" timestamp="1592340770229">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1592272642773" />
+    <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1592340770229" />
     <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592266279356">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>

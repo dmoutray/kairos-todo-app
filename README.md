@@ -1,7 +1,8 @@
 # Kairos todo app coding challenge
 
 ## Running the application
-To run this application, clone this repository `https://github.com/dmoutray/kairos-todo-app.git`
+The quickest and easiest way to run the application is to visit https://dmoutray.github.io/kairos-todo-app/#/login
+To run the application in development mode, clone this repository `https://github.com/dmoutray/kairos-todo-app.git`
 `cd` into the folder the application was cloned to.
 install node modules `npm install`
 run the app via `npm start`
