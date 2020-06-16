@@ -8,35 +8,35 @@ run the app via `npm start`
 
 ### Session storage 
 
-I made use of the sessionStorage API to keep track of the user is logged in. This meant that page refreshes didn’t affect the username on the main page. 
+The sessionStorage API is used to keep track of the user's login state. This prevented page refreshes from affecting the username on the home page. 
 
 ### Props/controlled components/stateless functional components 
 
-I tried to split the components down as small as possible without feeling fragmented. Most of the components are controlled by props. The state updates in the parent are handled by a series of handler functions. 
+Much of the code is divided into reusable React Components which keeps the codebase clean and easy to read. Most of the components are controlled by props. The state updates in the parent are handled by a series of handler functions. 
 Imports are in alphabetical order to make components and functions easier to find. 
 
 ### Binding functions 
 
-State handling functions were placed in their own directory to keep the components clutter free. To achieve this I made use of the javascript bind functionality.  
+State handling functions reside in their own directory to keep the components clutter free. This was made possible by the use of the javascript bind functionality.  
 
 ### Spread operator for updates 
 
-I used some of the ES6 shorthand code which boasts a very small footprint, but perhaps at the cost of readability. One feature I particularly like is the spread operator and the object deconstruction, especially when extracting props inside a controlled component. 
+I used ES6 shorthand code which boasts a very small footprint, but perhaps at the cost of readability. Two features I am particularly fond of are the spread operator and object deconstruction. These two features make extracting props inside a controlled component very clean. 
 
 ### Notification banner 
 
-I added a notification banner to let users know when validation failed. This was controlled by an error state object. 
+The web app features a notification banner to let users know if the validation has failed. The validation slider is controlled by an error state object which has `status` and `message` properties, which handle element visibility and inner text respectively.
 
 ### Validation 
 
-I added some basic validation to ensure that the required fields had been filled in. 
+Basic validation is included to ensure that required fields have been filled in. 
 
 ### Styling 
 
-I spent a good amount of time styling the app from scratch with CSS. I used the same design themes that apper on the Kairos website such as font and color scheme.
-I had considered using Bootstrap or Bulma for CSS but I felt it would be more beneficial to showcase my CSS knowledge as well as JavaScript. 
+I spent a great deal of time styling the app from scratch with CSS3. I applied the same design themes which appear on the Kairos website such as font and color scheme.
+I had considered using Bootstrap or Bulma libraries for CSS but I felt it would be more beneficial to showcase my CSS knowledge. 
 
 ### Routing 
 
-I used the react-router-dom module to handle routing. Some of the route changes required me to pass state so this was achieved with history.pushstate. 
-The routing allowed me to make a default route which acted as a not found page. 
+I used `react-router-dom` to handle routing for the application. Some route changes require passing state so this was achieved with `history.pushstate`. 
+The routing allowed me to make a default route which acted as a 'not found' page. 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dfd8a02-a228-450e-b015-fe09771002e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +100,8 @@
       <workItem from="1592256280138" duration="1502000" />
       <workItem from="1592265990883" duration="5991000" />
       <workItem from="1592272004150" duration="83000" />
-      <workItem from="1592272115061" duration="513000" />
+      <workItem from="1592272115061" duration="537000" />
+      <workItem from="1592337717393" duration="2373000" />
     </task>
     <task id="LOCAL-00001" summary="Add date picker and date sort function.">
       <created>1592040520129</created>
@@ -227,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592272549498</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Update readme">
+      <created>1592272639008</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1592272639008</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +260,8 @@
     <MESSAGE value="Adding docstrings&#10;some more tidying" />
     <MESSAGE value="Final styling changes" />
     <MESSAGE value="Update video demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update video demo" />
+    <MESSAGE value="Update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="852" y="399" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592048594550">
@@ -266,30 +276,30 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="1377" y="348" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1592225936440" />
-    <state x="721" y="166" key="CommitChangelistDialog2" timestamp="1592272548534">
+    <state x="721" y="166" key="CommitChangelistDialog2" timestamp="1592272638538">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="721" y="166" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1592272548534" />
+    <state x="721" y="166" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1592272638538" />
     <state x="876" y="352" key="FileChooserDialogImpl" timestamp="1592215961359">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="876" y="352" key="FileChooserDialogImpl/0.0.2194.1194@0.0.2194.1194" timestamp="1592215961359" />
-    <state width="2173" height="332" key="GridCell.Tab.0.bottom" timestamp="1592271986373">
+    <state width="2173" height="332" key="GridCell.Tab.0.bottom" timestamp="1592272652101">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2173" height="332" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1592271986373" />
-    <state width="2173" height="332" key="GridCell.Tab.0.center" timestamp="1592271986373">
+    <state width="2173" height="332" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1592272652101" />
+    <state width="2173" height="332" key="GridCell.Tab.0.center" timestamp="1592272652101">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2173" height="332" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1592271986373" />
-    <state width="2173" height="332" key="GridCell.Tab.0.left" timestamp="1592271986373">
+    <state width="2173" height="332" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1592272652101" />
+    <state width="2173" height="332" key="GridCell.Tab.0.left" timestamp="1592272652101">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2173" height="332" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1592271986373" />
-    <state width="2173" height="332" key="GridCell.Tab.0.right" timestamp="1592271986373">
+    <state width="2173" height="332" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1592272652101" />
+    <state width="2173" height="332" key="GridCell.Tab.0.right" timestamp="1592272652101">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2173" height="332" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1592271986373" />
+    <state width="2173" height="332" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1592272652101" />
     <state x="876" y="300" key="RollbackChangesDialog" timestamp="1592234267518">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -302,10 +312,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.2194.1194@0.0.2194.1194" timestamp="1592225308297" />
-    <state x="690" y="330" key="Vcs.Push.Dialog.v2" timestamp="1592272553169">
+    <state x="690" y="330" key="Vcs.Push.Dialog.v2" timestamp="1592272642773">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1592272553169" />
+    <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1592272642773" />
     <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592266279356">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
