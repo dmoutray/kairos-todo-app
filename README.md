@@ -33,7 +33,7 @@ I added some basic validation to ensure that the required fields had been filled
 
 ### Styling 
 
-I spent a good amount of time styling the app from scratch with CSS. 
+I spent a good amount of time styling the app from scratch with CSS. I used the same design themes that apper on the Kairos website such as font and color scheme.
 I had considered using Bootstrap or Bulma for CSS but I felt it would be more beneficial to showcase my CSS knowledge as well as JavaScript. 
 
 ### Routing 
