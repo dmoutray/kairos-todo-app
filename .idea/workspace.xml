@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6dfd8a02-a228-450e-b015-fe09771002e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo-app/todo-items.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-app/todo-items.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,8 @@
       <workItem from="1592272004150" duration="83000" />
       <workItem from="1592272115061" duration="537000" />
       <workItem from="1592337717393" duration="2568000" />
-      <workItem from="1592341731776" duration="1518000" />
+      <workItem from="1592341731776" duration="2150000" />
+      <workItem from="1592384889316" duration="5393000" />
     </task>
     <task id="LOCAL-00001" summary="Add date picker and date sort function.">
       <created>1592040520129</created>
@@ -326,17 +327,17 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1592340770229" />
-    <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592266279356">
+    <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592388953266">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="809" y="196" width="576" height="801" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592266279356" />
+    <state x="809" y="196" width="576" height="801" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592388953266" />
     <state x="754" y="279" key="run.anything.popup" timestamp="1592047228665">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="754" y="279" key="run.anything.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592047228665" />
-    <state x="758" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1592271514330">
+    <state x="758" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1592385711065">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="758" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592271514330" />
+    <state x="758" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592385711065" />
   </component>
 </project>

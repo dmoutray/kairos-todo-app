@@ -16,6 +16,7 @@ export default function TodoItems(props) {
         return (
             <table className='todo-list'>
                 <thead>
+                <div className='todo-count'><div >{todoItems.length}</div></div>
                 <tr>
                     <th>completed?</th>
                     <th>due date</th>

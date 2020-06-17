@@ -12,7 +12,7 @@ export default function Header(props) {
 
     return (
         <div className='header'>
-            <div>Todo App</div>
+            <div><h1>Todo App</h1></div>
             <div>{'Welcome, ' + props.userName}
                 <button className={'button primary'} onClick={
                     function () {

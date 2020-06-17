@@ -1,5 +1,5 @@
 body {
-  font-size: 1.1rem;
+  /*font-size: 1.1rem;*/
   background-color: #f2f2f2;
   padding: 0;
   margin: 0;
@@ -60,11 +60,16 @@ td:last-child>div {
   display: flex;
   justify-content: space-between;
   font-family: 'Barlow', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: italic;
-  padding: 50px;
+  align-items: baseline;
+  padding: 35px;
   background-color: peachpuff;
   border-bottom: 2px solid white;
+}
+
+.header h1 {
+  margin:0;
 }
 
 .header button {
@@ -88,12 +93,12 @@ td:last-child>div {
 .login {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  width: 50%;
-  height: 40vh;
+  width: 40%;
+  top: 25vh;
   background-color: peachpuff;
   box-shadow: 0 0 5px sandybrown;
+  position: absolute;
 }
 
 .login-form {
@@ -146,12 +151,32 @@ td:last-child>div {
 .todo-form{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .todo-list {
   width: 100%;
   box-shadow: 0 0 5px slategray;
+  margin-top: 2.5rem;
+}
+
+.todo-count {
+  height:0;
+  display:table-caption;
+}
+
+.todo-count>div {
+  float: left;
+  position: relative;
+  top: -29px;
+  background: lightsalmon;
+  left: -27px;
+  height: 50px;
+  color: white;
+  font-size: 1.5rem;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 25px;
 }
 
 input {
@@ -216,6 +241,7 @@ button.primary:active {
 .notification-container {
   overflow: hidden;
   position: absolute;
+  z-index: 3;
   top: 20px;
   height: 50px;
   width: 500px;
@@ -239,9 +265,10 @@ button.primary:active {
 }
 
 .modal {
-  position: absolute;
-  top:0;
-  width: 97vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
   z-index: 2;
   backdrop-filter: blur(0.1rem);
@@ -250,14 +277,15 @@ button.primary:active {
 .modal-body {
   display: block;
   position: relative;
-  top: 25vh;
-  width: 50vw;
+  top: 35vh;
+  width: 60vw;
   margin: 0 auto;
   text-align: center;
-  padding: 10px;
+  padding: 50px 10px 5px 10px;
   border-radius: 4px;
   box-shadow: 0 0 5px #E96C22;
   background-color: #f2f2f2;
+  max-width: 750px;
 }
 
 .not-found {
