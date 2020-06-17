@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dfd8a02-a228-450e-b015-fe09771002e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-demo.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video-demo.mp4" afterDir="false" />
-    </list>
+    <list default="true" id="6dfd8a02-a228-450e-b015-fe09771002e9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,18 +48,18 @@
     <property name="ts.external.directory.path" value="C:\Users\m00ts\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\201.7846.79\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app" />
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\public" />
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\images" />
+      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app" />
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\todo-app" />
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\notifications" />
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\modals" />
       <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\components\login" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app" />
-      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\public" />
-      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\images" />
-      <recent name="C:\Users\m00ts\WebstormProjects\kairos-todo-app\src\css" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -104,7 +101,7 @@
       <workItem from="1592337717393" duration="2568000" />
       <workItem from="1592341731776" duration="2150000" />
       <workItem from="1592384889316" duration="6061000" />
-      <workItem from="1592395272886" duration="666000" />
+      <workItem from="1592395272886" duration="691000" />
     </task>
     <task id="LOCAL-00001" summary="Add date picker and date sort function.">
       <created>1592040520129</created>
@@ -253,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592390494914</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Update demo video">
+      <created>1592396814142</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1592396814142</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +283,8 @@
     <MESSAGE value="Update video demo" />
     <MESSAGE value="Update readme" />
     <MESSAGE value="Add todo count and update styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add todo count and update styling" />
+    <MESSAGE value="Update demo video" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update demo video" />
   </component>
   <component name="WindowStateProjectService">
     <state x="852" y="399" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592048594550">
@@ -294,10 +299,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="1377" y="348" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1592225936440" />
-    <state x="721" y="166" key="CommitChangelistDialog2" timestamp="1592390494339">
+    <state x="721" y="166" key="CommitChangelistDialog2" timestamp="1592396813524">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="721" y="166" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1592390494339" />
+    <state x="721" y="166" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1592396813524" />
     <state x="876" y="352" key="FileChooserDialogImpl" timestamp="1592215961359">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -330,10 +335,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.2194.1194@0.0.2194.1194" timestamp="1592225308297" />
-    <state x="690" y="330" key="Vcs.Push.Dialog.v2" timestamp="1592390498992">
+    <state x="690" y="330" key="Vcs.Push.Dialog.v2" timestamp="1592396815354">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1592390498992" />
+    <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1592396815354" />
     <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592388953266">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
