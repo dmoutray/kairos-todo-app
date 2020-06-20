@@ -80,11 +80,11 @@ export default class TodoApp extends React.Component {
             let dateA = new Date(a.dateValue), dateB = new Date(b.dateValue);
             return dateA - dateB
         });
-        let sortCompleted = sortDate.sort(function (a, b) {
-            let dateA = a.completed, dateB = b.completed
-            return dateB - dateA;
-        });
-        this.setState({todoItems: sortCompleted})
+        // let sortCompleted = sortDate.sort(function (a, b) {
+        //     let dateA = a.completed, dateB = b.completed
+        //     return dateB - dateA;
+        // });
+        this.setState({todoItems: sortDate})
     }
 
     render() {
@@ -93,11 +93,11 @@ export default class TodoApp extends React.Component {
                 <Header userName={this.state.userName}/>
                 <div className='flex-container'>
                     <Notification error={this.state.error}/>
-                    <Modal edit={this.state.edit}
-                           handleUpdateItem={this.handleUpdateItem}
-                           handleEdit={this.handleEdit}
-                           handleResetEditState={this.handleResetEditState}
-                    />
+                    {/*<Modal edit={this.state.edit}*/}
+                    {/*       handleUpdateItem={this.handleUpdateItem}*/}
+                    {/*       handleEdit={this.handleEdit}*/}
+                    {/*       handleResetEditState={this.handleResetEditState}*/}
+                    {/*/>*/}
                     <div className='todo-container'>
                         <TodoForm message={this.state.message}
                                   dateValue={this.state.dateValue}

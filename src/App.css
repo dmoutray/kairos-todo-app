@@ -11,9 +11,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Barlow', sans-serif;
-    font-style: italic;
 }
-
 
 table {
     border-radius: 2px;
@@ -68,15 +66,18 @@ td:last-child > div {
     font-family: 'Barlow', sans-serif;
     color: white;
     font-size: 1.5rem;
-    font-style: italic;
     align-items: baseline;
     padding: 35px;
     background-color: cornflowerblue;
-    border-bottom: 2px solid white;
+    border-bottom: 5px solid royalblue;
 }
 
 .header h1 {
     margin: 0;
+}
+
+.header>div:nth-child(2) {
+    font-style: italic;
 }
 
 .header button {
@@ -88,6 +89,7 @@ td:last-child > div {
     padding: 50px;
     background: repeating-linear-gradient(-45deg, white, white 2px, #f2f2f2 2px, #f2f2f2 20px);
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .login-container {
@@ -161,39 +163,56 @@ td:last-child > div {
     flex-grow: 1;
 }
 
+.todo-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: cadetblue;
+    /* left: 50%; */
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
 .todo-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 50px 10px 0;
-    flex-grow: 2;
+display: flex;
+flex-direction: column;
+flex-grow: 2;
+padding: 10px;
+margin: 70px 30px 0 0;
+height: fit-content;
+background-color: white;
+box-shadow: 0 0 5px slategray;
 }
 
 .todo-list {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 3;
+display: flex;
+flex-direction: column;
+flex-grow: 3;
 }
 
 .todo-card {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 5px slategray;
-    margin-bottom: 10px;
-    background-color: white;
-    padding: 15px;
-    word-wrap: break-spaces;
-    border-top: 4px solid cornflowerblue;
+display: flex;
+box-shadow: 0 0 5px slategray;
+margin-bottom: 10px;
+background-color: white;
+padding: 15px;
+word-wrap: break-spaces;
+border-top: 4px solid cornflowerblue;
 }
 
 .todo-card:hover {
-    transform: scale(1.01);
+transform: scale(1.02);
 }
 
-.todo-card div {
-    margin-bottom: 5px;
+.todo-content {
+width: 100%;
 }
 
 .todo-due-date {
+    position: relative;
+    top: -10px;
     background-color: lightseagreen;
     color: white;
     padding: 5px;
@@ -202,177 +221,170 @@ td:last-child > div {
 }
 
 .todo-message {
-    font-size: 2rem;
-    margin: 20px 0;
+font-size: 2rem;
+margin: 20px 0;
+text-wrap: normal;
 }
 
 .icon {
-    width: 40px;
+width: 40px;
 }
 
 .todo-count {
-    padding: 0;
-    margin-bottom: 10px;
-    height: 50px;
+height: 50px;
 }
 
 .todo-count > div {
-    display: inline;
-    background: cornflowerblue;
-    height: 50px;
-    color: white;
-    font-size: 1.5rem;
-    width: 50px;
-    margin: 5px;
-    padding: 10px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 25px;
+display: inline;
+background: cornflowerblue;
+height: 50px;
+color: white;
+font-size: 1.5rem;
+width: 50px;
+margin: 5px;
+padding: 10px;
+text-align: center;
+line-height: 50px;
+border-radius: 25px;
 }
 
 input {
-    height: 3rem;
-    margin: 5px;
-    border: 1px solid lightgrey;
-    width: 100%;
+height: 3rem;
+margin: 5px;
+border: 1px solid lightgrey;
 }
 
 input:active {
-    border: none;
+border: none;
 }
 
 input[type='text'] {
-    border-radius: 2px;
+border-radius: 2px;
 }
 
 input[type='date'] {
-    border-radius: 2px;
+border-radius: 2px;
 }
 
 button {
-    border: none;
-    border-radius: 5px;
-    padding: 0.7rem 10px;
-    margin: 5px;
-    min-width: 100px;
-    font-family: 'Barlow', sans-serif;
-}
-
-button:hover {
-    border: none;
-}
-
-button:active {
-    outline: none
-}
-
-button:enabled {
-    outline: none
+border: none;
+border-radius: 5px;
+padding: 0.7rem 10px;
+margin: 5px;
+min-width: 100px;
+font-family: 'Barlow', sans-serif;
 }
 
 .button {
-    border: none;
-    border-radius: 2px;
+border: none;
+border-radius: 2px;
 }
 
 button.primary {
-    background-color: cornflowerblue;
-    color: white
+background-color: cornflowerblue;
+color: white
 }
 
 button.primary:hover {
-    box-shadow: 0 0 8px cornflowerblue;
+background-color: steelblue;
 }
 
 button.primary:active {
-    background-color: royalblue;
+background-color: royalblue;
+}
+
+button:hover, button:enabled {
+outline: none
+}
+
+.button-bar {
+position: relative;
+right: -8px;
+bottom: 4px;
+width: max-content;
 }
 
 .notification-container {
-    overflow: hidden;
-    position: absolute;
-    z-index: 3;
-    top: 20px;
-    height: 50px;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+overflow: hidden;
+position: absolute;
+z-index: 3;
+top: 20px;
+height: 50px;
+width: 500px;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
 }
 
 .notification {
-    position: absolute;
-    color: #19232d;
-    line-height: 50px;
-    padding: 0 10px;
-    font-family: 'Barlow', sans-serif;
-    font-size: 1rem;
-    border-top: 2px solid cornflowerblue;
-    background-color: white;
-    width: 100%;
+position: absolute;
+color: #19232d;
+line-height: 50px;
+padding: 0 10px;
+font-family: 'Barlow', sans-serif;
+font-size: 1rem;
+border-top: 2px solid cornflowerblue;
+background-color: white;
+width: 100%;
 }
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 2;
-    backdrop-filter: blur(0.1rem);
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+z-index: 2;
+backdrop-filter: blur(0.1rem);
 }
 
 .modal-body {
-    display: block;
-    position: relative;
-    top: 35vh;
-    width: 60vw;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px 10px 5px 10px;
-    border-radius: 4px;
-    box-shadow: 0 0 5px cornflowerblue;
-    background-color: #f2f2f2;
-    max-width: 750px;
+display: block;
+position: relative;
+top: 35vh;
+width: 60vw;
+margin: 0 auto;
+text-align: center;
+max-width: 750px;
 }
 
 .not-found {
-    position: relative;
-    width: 50vw;
-    margin: 0 auto;
-    top: 25vh;
-    text-align: center;
+position: relative;
+width: 50vw;
+margin: 0 auto;
+top: 25vh;
+text-align: center;
 }
 
 .not-found span {
-    font-style: normal;
+font-style: normal;
 }
 
 .example-enter {
-    opacity: 0.01;
+opacity: 0.01;
 }
 
 .example-enter.example-enter-active {
-    opacity: 1;
-    transition: opacity 300ms ease-in;
+opacity: 1;
+transition: opacity 300ms ease-in;
 }
 
 .example-leave {
-    opacity: 1;
+opacity: 1;
 }
 
 .example-leave.example-leave-active {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
+opacity: 0.01;
+transition: opacity 300ms ease-in;
 }
 
 .example-appear {
-    opacity: 0.01;
+opacity: 0.01;
 }
 
 .example-appear.example-appear-active {
-    opacity: 1;
-    transition: opacity .3s ease-in;
+opacity: 1;
+transition: opacity .3s ease-in;
 }

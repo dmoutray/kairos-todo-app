@@ -28,27 +28,49 @@ export default function TodoItems(props) {
                         todoItems.map((row, key) => {
                                 let rowKey = key;
                                 return (
-                                    <div className='todo-card' data-key={rowKey}
-                                         key={key}>{Object.keys(row).map((item, key) => {
-                                             if(item === 'dateValue'){
-                                                 return <div className='todo-due-date'>{ new Date(row[item]).toDateString()}</div>
-                                             } else if (item === 'message'){
-                                                 return <div className='todo-message'>{ row[item]}</div>
-                                             }
-                                        return (
-                                            <div className='todo-info' data-key={rowKey} key={key}>
-                                                <div>{row[item]}</div>
+                                    <>
+                                        <div className='todo-card'
+                                             data-key={rowKey}
+                                             onClick={handleSetCompleted}
+                                             style={{backgroundColor: todoItems[key].completed ? 'rgba(0, 255, 0, 0.2)' : ''}}
+                                             key={key}>
+                                            <div className='todo-content'>
+                                                {Object.keys(row).map((item, key) => {
+                                                    if (item === 'dateValue') {
+                                                        return <div
+                                                            className='todo-due-date'>{new Date(row[item]).toDateString()}</div>
+                                                    } else if (item === 'message') {
+                                                        return <div className='todo-message'>{row[item]}</div>
+                                                    }
+                                                    return (
+                                                        <div className='todo-info' data-key={rowKey} key={key}>
+                                                            <div>{row[item]}</div>
+                                                        </div>
+                                                    )
+                                                })}
                                             </div>
-                                        )
-                                    })}
-                                        <div className='button-bar'>
-                                            {todoItems.length > 0 && <EditButtons rowKey={rowKey}
-                                                                                  handleDeleteItem={handleDeleteItem}
-                                                                                  handleEditItem={handleEditItem}
-                                                                                  handleSetCompleted={handleSetCompleted}/>
-                                            }
+                                            <div className='button-bar'>
+                                                {todoItems.length > 0 && <EditButtons rowKey={rowKey}
+                                                                                      handleDeleteItem={handleDeleteItem}
+                                                                                      handleEditItem={handleEditItem}
+                                                />
+                                                }
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div style={{
+                                            height: '0px',
+                                            overflow: 'hidden'
+                                        }}>
+                                            <input type='text' data-key='message' value={null}
+                                                   onChange={null} placeholder={`Add your todo here`}/>
+                                            <input type='date' data-key='dateValue' value={null}
+                                                   onChange={null}/>
+                                            <div>
+                                                <button className={'button primary'} onClick={null}>Add
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </>
                                 )
                             }
                         )

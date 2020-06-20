@@ -132,13 +132,15 @@ export function handleEdit() {
     )
 }
 
-export function handleSetCompleted(event, rowKey) {
+export function handleSetCompleted(event) {
     /**
      * Generic function to update the completed state with a given to-do key:value pair
      */
-
+    event.stopPropagation();
+    event.preventDefault();
+    let key = event.currentTarget.dataset.key;
     this.setState((state) => {
-            return [...state.todoItems][rowKey].completed = true
+            return [...state.todoItems][key].completed = true
         }
         , this.sortTodoItems)
 }
