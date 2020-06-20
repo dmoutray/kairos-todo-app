@@ -12,7 +12,7 @@ export function EditButtons(props) {
     const {rowKey, handleEditItem, handleDeleteItem} = props
 
     return (
-        <td>
+        <div className='button-bar'>
             <div className={'image-button'}
                  data-key={rowKey}
                  onClick={handleEditItem}
@@ -25,6 +25,6 @@ export function EditButtons(props) {
             > delete
                 <img src={deleteIcon}/>
             </div>
-        </td>
+        </div>
     )
 }

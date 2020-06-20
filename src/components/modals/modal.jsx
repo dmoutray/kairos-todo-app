@@ -6,9 +6,10 @@ export default function Modal(props) {
      * Component which appears as a top layer modal used for editing existing todo items
      */
 
-    const {edit, handleEdit, handleResetEditState, handleUpdateItem } = props
+    const {edit, handleEdit, handleResetEditState, handleUpdateItem} = props
 
     return (
+
         <div className={'modal'} hidden={!edit.status}>
             <div className={'modal-body'}>
                 <div className='todo-form'>

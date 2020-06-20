@@ -17,6 +17,7 @@ import {
     handleSetCompleted,
     handleUpdateItem
 } from "../change-handlers/handle-changes";
+import {CSSTransitionGroup} from "react-transition-group";
 
 
 export default class TodoApp extends React.Component {
@@ -28,9 +29,9 @@ export default class TodoApp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            userName: function(){
+            userName: function () {
                 let userName = sessionStorage.getItem('userName')
-                if (userName){
+                if (userName) {
                     return userName
                 } else {
                     props.history.push('/login')
@@ -45,7 +46,18 @@ export default class TodoApp extends React.Component {
                 message: ''
             },
             dateList: [],
-            todoItems: []
+            todoItems: [
+                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+            ]
         }
 
         /* Bind these functions since they are imported yet required access to this.state */
@@ -86,16 +98,18 @@ export default class TodoApp extends React.Component {
                            handleEdit={this.handleEdit}
                            handleResetEditState={this.handleResetEditState}
                     />
-                    <TodoForm message={this.state.message}
-                              dateValue={this.state.dateValue}
-                              handleAddItem={this.handleAddItem}
-                              handleChange={this.handleChange}
-                    />
-                    <TodoItems todoItems={this.state.todoItems}
-                               handleSetCompleted={this.handleSetCompleted}
-                               handleDeleteItem={this.handleDeleteItem}
-                               handleEditItem={this.handleEditItem}
-                    />
+                    <div className='todo-container'>
+                        <TodoForm message={this.state.message}
+                                  dateValue={this.state.dateValue}
+                                  handleAddItem={this.handleAddItem}
+                                  handleChange={this.handleChange}
+                        />
+                        <TodoItems todoItems={this.state.todoItems}
+                                   handleSetCompleted={this.handleSetCompleted}
+                                   handleDeleteItem={this.handleDeleteItem}
+                                   handleEditItem={this.handleEditItem}
+                        />
+                    </div>
                 </div>
             </>
         )

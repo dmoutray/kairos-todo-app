@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dfd8a02-a228-450e-b015-fe09771002e9" name="Default Changelist" comment="" />
+    <list default="true" id="6dfd8a02-a228-450e-b015-fe09771002e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo-app/edit-buttons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-app/edit-buttons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo-app/todo-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-app/todo-form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo-app/todo-items.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-app/todo-items.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/todo-app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/todo-app.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +42,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -303,30 +314,34 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="721" y="166" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1592396813524" />
+    <state x="222" y="102" key="DiffContextDialog" timestamp="1592649157544">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="222" y="102" key="DiffContextDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1592649157544" />
     <state x="876" y="352" key="FileChooserDialogImpl" timestamp="1592215961359">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="876" y="352" key="FileChooserDialogImpl/0.0.2194.1194@0.0.2194.1194" timestamp="1592215961359" />
-    <state width="1075" height="332" key="GridCell.Tab.0.bottom" timestamp="1592391132688">
+    <state width="1074" height="327" key="GridCell.Tab.0.bottom" timestamp="1592659697983">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="1075" height="332" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1592391132688" />
-    <state width="1075" height="332" key="GridCell.Tab.0.center" timestamp="1592391132688">
+    <state width="1074" height="327" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1592659697983" />
+    <state width="1074" height="327" key="GridCell.Tab.0.center" timestamp="1592659697983">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="1075" height="332" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1592391132688" />
-    <state width="1075" height="332" key="GridCell.Tab.0.left" timestamp="1592391132687">
+    <state width="1074" height="327" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1592659697983" />
+    <state width="1074" height="327" key="GridCell.Tab.0.left" timestamp="1592659697983">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="1075" height="332" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1592391132687" />
-    <state width="1075" height="332" key="GridCell.Tab.0.right" timestamp="1592391132688">
+    <state width="1074" height="327" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1592659697983" />
+    <state width="1074" height="327" key="GridCell.Tab.0.right" timestamp="1592659697983">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="1075" height="332" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1592391132688" />
-    <state x="876" y="300" key="RollbackChangesDialog" timestamp="1592234267518">
+    <state width="1074" height="327" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1592659697983" />
+    <state x="876" y="300" key="RollbackChangesDialog" timestamp="1592649164534">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="876" y="300" key="RollbackChangesDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1592234267518" />
+    <state x="876" y="300" key="RollbackChangesDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1592649164534" />
     <state x="606" y="242" key="SettingsEditor" timestamp="1592215975636">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -339,17 +354,17 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1592396815354" />
-    <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592388953266">
+    <state x="809" y="196" width="576" height="801" key="find.popup" timestamp="1592663807239">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="809" y="196" width="576" height="801" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592388953266" />
+    <state x="809" y="196" width="576" height="801" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592663807239" />
     <state x="754" y="279" key="run.anything.popup" timestamp="1592047228665">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="754" y="279" key="run.anything.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592047228665" />
-    <state x="758" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1592385711065">
+    <state x="758" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1592665364588">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="758" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592385711065" />
+    <state x="758" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1592665364588" />
   </component>
 </project>

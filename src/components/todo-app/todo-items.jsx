@@ -1,6 +1,5 @@
-import check from "../../images/tick-icon.png";
-import cross from "../../images/cross-icon.png";
 import React from "react";
+import {CSSTransitionGroup} from 'react-transition-group';
 
 import {EditButtons} from "./edit-buttons";
 
@@ -14,46 +13,54 @@ export default function TodoItems(props) {
 
     if (todoItems.length) {
         return (
-            <table className='todo-list'>
-                <thead>
-                <div className='todo-count'><div >{todoItems.length}</div></div>
-                <tr>
-                    <th>completed?</th>
-                    <th>due date</th>
-                    <th>message</th>
-                    <th>actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                {
-                    todoItems.map((row, key) => {
-                            let rowKey = key;
-                            return (
-                                <tr data-key={rowKey} key={key}>{Object.keys(row).map((item, key) => {
-                                    if (item === 'completed') {
-                                        return <td data-key={rowKey} onClick={(event) => {
-                                            handleSetCompleted(event, rowKey)
-                                        }}>{row[item] ? <img src={check} alt='done'/> :
-                                            <img src={cross} alt='not done'/>}</td>
-                                    } else {
-                                        return (<td data-key={rowKey} key={key}>
-                                            <div>{row[item]}</div>
-                                        </td>)
-                                    }
-                                })}
-                                    {todoItems.length > 0 && <EditButtons rowKey={rowKey}
-                                                                          handleDeleteItem={handleDeleteItem}
-                                                                          handleEditItem={handleEditItem}/>
-                                    }
-                                </tr>
-                            )
-                        }
-                    )
-                }
-                </tbody>
-            </table>
+            <div className='todo-list'>
+                <CSSTransitionGroup
+                    transitionName="example"
+                    transitionAppear={true}
+                    transitionAppearTimeout={300}
+                    transitionEnter={true}
+                    transitionLeave={true}>
+                    <div className='todo-count'>
+                        <h3> You have {todoItems.length} outstanding item{todoItems.length > 1 ? 's' : ''} to
+                            complete </h3>
+                    </div>
+                    {
+                        todoItems.map((row, key) => {
+                                let rowKey = key;
+                                return (
+                                    <div className='todo-card' data-key={rowKey}
+                                         key={key}>{Object.keys(row).map((item, key) => {
+                                             if(item === 'dateValue'){
+                                                 return <div className='todo-due-date'>{ new Date(row[item]).toDateString()}</div>
+                                             } else if (item === 'message'){
+                                                 return <div className='todo-message'>{ row[item]}</div>
+                                             }
+                                        return (
+                                            <div className='todo-info' data-key={rowKey} key={key}>
+                                                <div>{row[item]}</div>
+                                            </div>
+                                        )
+                                    })}
+                                        <div className='button-bar'>
+                                            {todoItems.length > 0 && <EditButtons rowKey={rowKey}
+                                                                                  handleDeleteItem={handleDeleteItem}
+                                                                                  handleEditItem={handleEditItem}
+                                                                                  handleSetCompleted={handleSetCompleted}/>
+                                            }
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        )
+                    }
+                </CSSTransitionGroup>
+            </div>
         )
     } else {
-        return <div style={{textAlign: 'center'}}><h2>You currently have no todo items to complete 🎉</h2></div>
+        return (
+            <div className='todo-list' style={{textAlign: 'center'}}>
+                <h2>You currently have no todo items to complete 🎉</h2>
+            </div>
+        )
     }
 }

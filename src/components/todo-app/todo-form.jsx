@@ -10,9 +10,10 @@ export default function TodoForm(props) {
 
     return (
         <div className='todo-form'>
+            <h2>Add a todo item</h2>
             <input type='text' data-key='message' value={message} onChange={handleChange} placeholder={`Add your todo here`}/>
             <input type='date' data-key='dateValue' value={dateValue} onChange={handleChange}/>
-            <button className={'button primary'} onClick={handleAddItem}>Add todo</button>
+            <div><button className={'button primary'} onClick={handleAddItem}>Add</button></div>
         </div>
     )
 }
