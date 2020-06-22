@@ -1,6 +1,6 @@
 ## Running the application
-The quickest and easiest way to run the application is to visit 
-To run the application in development mode, clone this repository 
+The quickest and easiest way to run the application is to visit https://dmoutray.github.io/react-demo-app/
+To run the application in development mode, clone this repository https://github.com/dmoutray/react-demo-app.git
 `cd` into the folder the application was cloned to.
 install node modules `npm install`
 run the app via `npm start`
