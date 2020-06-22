@@ -7,7 +7,7 @@ run the app via `npm start`
 
 ### Session storage 
 
-The sessionStorage API is used to keep track of the user's login state. This prevented page refreshes from affecting the username on the home page. 
+The sessionStorage API can be used to keep track of a user's login state. This will prevent page refreshes from affecting the username on the home page. 
 
 ### Props/controlled components/stateless functional components 
 
