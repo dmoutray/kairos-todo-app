@@ -57,6 +57,7 @@ export function handleEditItem(event) {
      * Update the state to reflect changes made by the edit action.
      */
 
+    debugger;
     let {key} = event.target.dataset;
 
     this.setState({

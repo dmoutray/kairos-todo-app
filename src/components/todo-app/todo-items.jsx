@@ -1,7 +1,7 @@
 import React from "react";
 import {CSSTransitionGroup} from 'react-transition-group';
 
-import {EditButtons} from "./edit-buttons";
+import {ButtonBar} from "./button-bar";
 
 export default function TodoItems(props) {
 
@@ -9,7 +9,52 @@ export default function TodoItems(props) {
      * Controlled component which provides the list of todo items
      */
 
-    const {todoItems, handleDeleteItem, handleEditItem, handleSetCompleted} = props
+    const {
+        todoItems,
+        edit,
+        handleDeleteItem,
+        handleEdit,
+        handleEditItem,
+        handleResetEditState,
+        handleSetCompleted,
+        handleUpdateItem
+    } = props
+
+    function buildTodoContent(row, key, todoItemKey, item) {
+        if (item === 'dateValue') {
+            return <div
+                className='todo-due-date'>{new Date(row[item]).toDateString()}</div>
+        } else if (item === 'message') {
+            return <div className={todoItems[todoItemKey].completed ? 'todo-message completed' : 'todo-message'}
+            >{row[item]}</div>
+        }
+        return (
+            <div className='todo-info' data-key={todoItemKey} key={key}>
+                <div>{row[item]}</div>
+            </div>
+        )
+    }
+
+    function showEditForm(todoItemKey) {
+        if (edit.rowId === todoItemKey.toString()) {
+            return (
+                <div className='todo-form edit'>
+                    <input type='text' data-key='message' value={edit.message}
+                           onChange={handleUpdateItem} placeholder={`Edit your todo here`}/>
+                    <input type='date' data-key='dateValue' value={edit.dateValue}
+                           onChange={handleUpdateItem}/>
+                    <div>
+                        <button className={'button primary'} data-key={todoItemKey}
+                                onClick={handleEdit}>update
+                        </button>
+                        <button className={'button secondary'} data-key={todoItemKey}
+                                onClick={handleResetEditState}>cancel
+                        </button>
+                    </div>
+                </div>
+            )
+        }
+    }
 
     if (todoItems.length) {
         return (
@@ -26,50 +71,32 @@ export default function TodoItems(props) {
                     </div>
                     {
                         todoItems.map((row, key) => {
-                                let rowKey = key;
+                                let todoItemKey = key;
                                 return (
                                     <>
                                         <div className='todo-card'
-                                             data-key={rowKey}
-                                             onClick={handleSetCompleted}
-                                             style={{backgroundColor: todoItems[key].completed ? 'rgba(0, 255, 0, 0.2)' : ''}}
+                                             data-key={todoItemKey}
+                                             style={{backgroundColor: todoItems[key].completed ? '#98ee99' : ''}}
                                              key={key}>
-                                            <div className='todo-content'>
-                                                {Object.keys(row).map((item, key) => {
-                                                    if (item === 'dateValue') {
-                                                        return <div
-                                                            className='todo-due-date'>{new Date(row[item]).toDateString()}</div>
-                                                    } else if (item === 'message') {
-                                                        return <div className='todo-message'>{row[item]}</div>
+                                            <div className='todo-card-body'>
+                                                <div className='todo-card-content'>
+                                                    {Object.keys(row).map((item, key) => {
+                                                        return buildTodoContent(row, key, todoItemKey, item)
+                                                    })
                                                     }
-                                                    return (
-                                                        <div className='todo-info' data-key={rowKey} key={key}>
-                                                            <div>{row[item]}</div>
-                                                        </div>
-                                                    )
-                                                })}
+                                                </div>
+                                                <div className='button-bar'>
+                                                    {todoItems.length > 0 && <ButtonBar todoItemKey={todoItemKey}
+                                                                                        handleDeleteItem={handleDeleteItem}
+                                                                                        handleEditItem={handleEditItem}
+                                                                                        handleSetCompleted={handleSetCompleted}
+                                                    />
+                                                    }
+                                                </div>
                                             </div>
-                                            <div className='button-bar'>
-                                                {todoItems.length > 0 && <EditButtons rowKey={rowKey}
-                                                                                      handleDeleteItem={handleDeleteItem}
-                                                                                      handleEditItem={handleEditItem}
-                                                />
-                                                }
-                                            </div>
+                                            {showEditForm(todoItemKey)}
                                         </div>
-                                        <div style={{
-                                            height: '0px',
-                                            overflow: 'hidden'
-                                        }}>
-                                            <input type='text' data-key='message' value={null}
-                                                   onChange={null} placeholder={`Add your todo here`}/>
-                                            <input type='date' data-key='dateValue' value={null}
-                                                   onChange={null}/>
-                                            <div>
-                                                <button className={'button primary'} onClick={null}>Add
-                                                </button>
-                                            </div>
-                                        </div>
+
                                     </>
                                 )
                             }
@@ -80,9 +107,7 @@ export default function TodoItems(props) {
         )
     } else {
         return (
-            <div className='todo-list' style={{textAlign: 'center'}}>
-                <h2>You currently have no todo items to complete 🎉</h2>
-            </div>
+            <h2 style={{marginTop: '60px'}}>You currently have no todo items to complete 🎉</h2>
         )
     }
 }

@@ -7,57 +7,14 @@ body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     min-height: 100vh;
+    --color-primary: cornflowerblue;
+    --color-button-primary: cornflowerblue;
+    --color-button-secondary: #bababa;
+    --color-secondary: royalblue;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Barlow', sans-serif;
-}
-
-table {
-    border-radius: 2px;
-}
-
-table tr {
-    background-color: white;
-    border: 1px solid cornflowerblue;
-    height: 50px;
-}
-
-table td, th {
-    text-align: center;
-    padding: 0 10px;
-}
-
-table th {
-    font-family: 'Barlow', sans-serif;
-}
-
-tr > td > img {
-    position: relative;
-    top: 3px;
-    width: 32px;
-    transition: all .2s ease-in-out;
-}
-
-tr > td > img:hover {
-    transform: scale(1.2);
-}
-
-td:nth-child(2) > div {
-    text-align: left;
-    width: 20vw;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-td:last-child {
-    background: none;
-}
-
-td:last-child > div {
-    position: relative;
-    text-align: center;
-    top: -5px;
 }
 
 .header {
@@ -68,15 +25,15 @@ td:last-child > div {
     font-size: 1.5rem;
     align-items: baseline;
     padding: 35px;
-    background-color: cornflowerblue;
-    border-bottom: 5px solid royalblue;
+    background-color:  var(--color-primary);
+    border-bottom: 5px solid  var(--color-secondary);
 }
 
 .header h1 {
     margin: 0;
 }
 
-.header>div:nth-child(2) {
+.header > div:nth-child(2) {
     font-style: italic;
 }
 
@@ -104,10 +61,9 @@ td:last-child > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
     top: 25vh;
-    background-color: cornflowerblue;
-    box-shadow: 0 0 5px cornflowerblue;
+    background-color:  white;
+    box-shadow: 0 0 5px  var(--color-button-secondary);
     position: absolute;
 }
 
@@ -136,7 +92,7 @@ td:last-child > div {
 
 .image-button {
     display: inline;
-    background-color: cornflowerblue;
+    background-color:  var(--color-primary);
     border-radius: 2px;
     font-family: 'Barlow', sans-serif;
     color: white;
@@ -144,6 +100,7 @@ td:last-child > div {
     margin-right: 5px;
     cursor: default;
     width: 100%;
+    font-size: 0.74rem;
 }
 
 .image-button img {
@@ -155,7 +112,7 @@ td:last-child > div {
 }
 
 .image-button:hover {
-    box-shadow: 0 0 8px cornflowerblue;
+    box-shadow: 0 0 8px  var(--color-primary);
 }
 
 .todo-container {
@@ -176,43 +133,50 @@ td:last-child > div {
 }
 
 .todo-form {
-display: flex;
-flex-direction: column;
-flex-grow: 2;
-padding: 10px;
-margin: 70px 30px 0 0;
-height: fit-content;
-background-color: white;
-box-shadow: 0 0 5px slategray;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    padding: 10px;
+    margin: 70px 30px 0 0;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 0 5px slategray;
+}
+
+.todo-form.edit {
+    box-shadow: none;
+    margin: 0;
 }
 
 .todo-list {
-display: flex;
-flex-direction: column;
-flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
 }
 
 .todo-card {
-display: flex;
-box-shadow: 0 0 5px slategray;
-margin-bottom: 10px;
-background-color: white;
-padding: 15px;
-word-wrap: break-spaces;
-border-top: 4px solid cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px slategray;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 15px;
+    word-wrap: break-spaces;
+    border-top: 4px solid  var(--color-primary);
 }
 
-.todo-card:hover {
-transform: scale(1.02);
+.todo-card-body {
+    display: flex;
 }
 
-.todo-content {
-width: 100%;
+.todo-card-content {
+    width: 100%;
 }
 
 .todo-due-date {
     position: relative;
     top: -10px;
+    left: -10px;
     background-color: lightseagreen;
     color: white;
     padding: 5px;
@@ -221,170 +185,181 @@ width: 100%;
 }
 
 .todo-message {
-font-size: 2rem;
-margin: 20px 0;
-text-wrap: normal;
+    font-size: 2rem;
+    margin: 20px 0;
+    max-width: fit-content;
+}
+
+.todo-message.completed {
+    text-decoration: line-through;
 }
 
 .icon {
-width: 40px;
+    width: 40px;
 }
 
 .todo-count {
-height: 50px;
+    width: fit-content;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .todo-count > div {
-display: inline;
-background: cornflowerblue;
-height: 50px;
-color: white;
-font-size: 1.5rem;
-width: 50px;
-margin: 5px;
-padding: 10px;
-text-align: center;
-line-height: 50px;
-border-radius: 25px;
+    display: inline;
+    background:  var(--color-primary);
+    height: 50px;
+    color: white;
+    font-size: 1.5rem;
+    width: 50px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
 }
 
 input {
-height: 3rem;
-margin: 5px;
-border: 1px solid lightgrey;
+    height: 3rem;
+    margin: 5px;
+    border: 1px solid lightgrey;
 }
 
 input:active {
-border: none;
+    border: none;
 }
 
 input[type='text'] {
-border-radius: 2px;
+    border-radius: 2px;
 }
 
 input[type='date'] {
-border-radius: 2px;
+    border-radius: 2px;
 }
 
 button {
-border: none;
-border-radius: 5px;
-padding: 0.7rem 10px;
-margin: 5px;
-min-width: 100px;
-font-family: 'Barlow', sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 10px;
+    margin: 5px;
+    min-width: 100px;
+    font-family: 'Barlow', sans-serif;
 }
 
 .button {
-border: none;
-border-radius: 2px;
+    border: none;
+    border-radius: 2px;
 }
 
 button.primary {
-background-color: cornflowerblue;
-color: white
+    background-color:  var(--color-primary);
+    color: white
 }
 
 button.primary:hover {
-background-color: steelblue;
+    background-color: steelblue;
 }
 
 button.primary:active {
-background-color: royalblue;
+    background-color:  var(--color-secondary);
 }
 
 button:hover, button:enabled {
-outline: none
+    outline: none
+}
+
+button.secondary {
+    background-color:  var(--color-button-secondary);
+    color: white
+}
+
+button.secondary:hover {
+    background-color: #8a8a8a;
+}
+
+button.secondary:active {
+    background-color:  #8a8a8a;
 }
 
 .button-bar {
-position: relative;
-right: -8px;
-bottom: 4px;
-width: max-content;
+    position: relative;
+    top: -5px;
+    right: -5px;
+    width: max-content;
+}
+
+.button-bar img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.button-bar img:hover{
+    transform: scale(1.2);
 }
 
 .notification-container {
-overflow: hidden;
-position: absolute;
-z-index: 3;
-top: 20px;
-height: 50px;
-width: 500px;
-margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-text-align: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    height: 50px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .notification {
-position: absolute;
-color: #19232d;
-line-height: 50px;
-padding: 0 10px;
-font-family: 'Barlow', sans-serif;
-font-size: 1rem;
-border-top: 2px solid cornflowerblue;
-background-color: white;
-width: 100%;
-}
-
-.modal {
-position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-z-index: 2;
-backdrop-filter: blur(0.1rem);
-}
-
-.modal-body {
-display: block;
-position: relative;
-top: 35vh;
-width: 60vw;
-margin: 0 auto;
-text-align: center;
-max-width: 750px;
+    position: absolute;
+    color: #19232d;
+    line-height: 50px;
+    padding: 0 10px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    border-top: 2px solid var(--color-primary);
+    background-color: white;
+    width: 100%;
 }
 
 .not-found {
-position: relative;
-width: 50vw;
-margin: 0 auto;
-top: 25vh;
-text-align: center;
+    position: relative;
+    width: 50vw;
+    margin: 0 auto;
+    top: 25vh;
+    text-align: center;
 }
 
 .not-found span {
-font-style: normal;
+    font-style: normal;
 }
 
 .example-enter {
-opacity: 0.01;
+    opacity: 0.01;
 }
 
 .example-enter.example-enter-active {
-opacity: 1;
-transition: opacity 300ms ease-in;
+    opacity: 1;
+    transition: opacity 300ms ease-in;
 }
 
 .example-leave {
-opacity: 1;
+    opacity: 1;
 }
 
 .example-leave.example-leave-active {
-opacity: 0.01;
-transition: opacity 300ms ease-in;
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
 }
 
 .example-appear {
-opacity: 0.01;
+    opacity: 0.01;
 }
 
 .example-appear.example-appear-active {
-opacity: 1;
-transition: opacity .3s ease-in;
+    opacity: 1;
+    transition: opacity .3s ease-in;
 }
