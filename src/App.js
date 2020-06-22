@@ -3,7 +3,6 @@ import React from 'react';
 import './App.css';
 import NotFound from "./components/not-found";
 import TodoApp from "./views/todo-app";
-import Login from "./views/login";
 
 import {
     HashRouter as Router,
