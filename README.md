@@ -1,8 +1,6 @@
-# Kairos todo app coding challenge
-
 ## Running the application
-The quickest and easiest way to run the application is to visit https://dmoutray.github.io/kairos-todo-app/#/login
-To run the application in development mode, clone this repository `https://github.com/dmoutray/kairos-todo-app.git`
+The quickest and easiest way to run the application is to visit 
+To run the application in development mode, clone this repository 
 `cd` into the folder the application was cloned to.
 install node modules `npm install`
 run the app via `npm start`
@@ -31,11 +29,6 @@ The web app features a notification banner to let users know if the validation h
 ### Validation 
 
 Basic validation is included to ensure that required fields have been filled in. 
-
-### Styling 
-
-I spent a great deal of time styling the app from scratch with CSS3. I applied the same design themes which appear on the Kairos website such as font and color scheme.
-I had considered using Bootstrap or Bulma libraries for CSS but I felt it would be more beneficial to showcase my CSS knowledge. 
 
 ### Routing 
 
