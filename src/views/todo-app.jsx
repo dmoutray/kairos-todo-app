@@ -1,7 +1,6 @@
 import React from "react";
 
 import Header from "../components/header";
-import Modal from "../components/modals/modal"
 import Notification from "../components/notifications/notification";
 import TodoItems from "../components/todo-app/todo-items";
 import TodoForm from "../components/todo-app/todo-form";
@@ -17,7 +16,6 @@ import {
     handleSetCompleted,
     handleUpdateItem
 } from "../change-handlers/handle-changes";
-import {CSSTransitionGroup} from "react-transition-group";
 
 
 export default class TodoApp extends React.Component {
@@ -47,16 +45,9 @@ export default class TodoApp extends React.Component {
             },
             dateList: [],
             todoItems: [
-                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
-                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
-                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
-                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
-                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
-                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
-                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
-                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
-                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
-                {"dateValue": "2020-06-11", "message": "Test 123", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Go Shopping", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Book Motorcycle MOT", "completed": false},
+                {"dateValue": "2020-06-11", "message": "Go for a cycle", "completed": false},
             ]
         }
 
@@ -80,11 +71,12 @@ export default class TodoApp extends React.Component {
             let dateA = new Date(a.dateValue), dateB = new Date(b.dateValue);
             return dateA - dateB
         });
-        // let sortCompleted = sortDate.sort(function (a, b) {
-        //     let dateA = a.completed, dateB = b.completed
-        //     return dateB - dateA;
-        // });
-        this.setState({todoItems: sortDate})
+        // Sort by Completed items as well
+        let sortCompleted = sortDate.sort(function (a, b) {
+            let dateA = a.completed, dateB = b.completed
+            return dateB - dateA;
+        });
+        this.setState({todoItems: sortCompleted})
     }
 
     render() {
@@ -93,21 +85,22 @@ export default class TodoApp extends React.Component {
                 <Header userName={this.state.userName}/>
                 <div className='flex-container'>
                     <Notification error={this.state.error}/>
-                    {/*<Modal edit={this.state.edit}*/}
-                    {/*       handleUpdateItem={this.handleUpdateItem}*/}
-                    {/*       handleEdit={this.handleEdit}*/}
-                    {/*       handleResetEditState={this.handleResetEditState}*/}
-                    {/*/>*/}
                     <div className='todo-container'>
                         <TodoForm message={this.state.message}
                                   dateValue={this.state.dateValue}
                                   handleAddItem={this.handleAddItem}
                                   handleChange={this.handleChange}
+                                  action='Add'
                         />
                         <TodoItems todoItems={this.state.todoItems}
                                    handleSetCompleted={this.handleSetCompleted}
                                    handleDeleteItem={this.handleDeleteItem}
                                    handleEditItem={this.handleEditItem}
+                                   handleEdit={this.handleEdit}
+                                   handleChange={this.handleChange}
+                                   handleUpdateItem={this.handleUpdateItem}
+                                   handleResetEditState={this.handleResetEditState}
+                                   edit={this.state.edit}
                         />
                     </div>
                 </div>
