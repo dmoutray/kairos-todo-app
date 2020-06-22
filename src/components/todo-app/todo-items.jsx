@@ -107,7 +107,9 @@ export default function TodoItems(props) {
         )
     } else {
         return (
-            <h2 style={{marginTop: '60px'}}>You currently have no todo items to complete 🎉</h2>
+            <div className='todo-empty'>
+                <h1>You currently have no todo items to complete 🎉</h1>
+            </div>
         )
     }
 }

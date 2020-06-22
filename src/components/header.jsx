@@ -14,13 +14,6 @@ export default function Header(props) {
         <div className='header'>
             <div><h1>Todo App</h1></div>
             <div>{'Welcome, ' + props.userName}
-                <button className={'button primary'} onClick={
-                    function () {
-                        sessionStorage.setItem('userName', '')
-                        reactHistory.push('/login')
-                    }
-                }>Logout
-                </button>
             </div>
         </div>
     )

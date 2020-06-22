@@ -27,15 +27,7 @@ export default class TodoApp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            userName: function () {
-                let userName = sessionStorage.getItem('userName')
-                if (userName) {
-                    return userName
-                } else {
-                    props.history.push('/login')
-                }
-
-            }(),
+            userName: 'Demo User',
             dateValue: '',
             message: '',
             edit: EDIT_DEFAULT,

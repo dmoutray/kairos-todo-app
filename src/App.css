@@ -120,6 +120,12 @@ h1, h2, h3, h4 {
     flex-grow: 1;
 }
 
+.todo-empty {
+    display: flex;
+    flex-grow: 2;
+    margin-top: 60px;
+}
+
 .todo-overlay {
     position: relative;
     top: 0;

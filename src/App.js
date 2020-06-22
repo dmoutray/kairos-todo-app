@@ -16,8 +16,7 @@ function App() {
         <div className="App">
             <Router>
                 <Switch>
-                    <Route exact path="/" component={Login}/>
-                    <Route path="/login" component={Login}/>
+                    <Route exact path="/" component={TodoApp}/>
                     <Route path="/todo" component={TodoApp}/>
                     <Route component={NotFound}/>
                 </Switch>
